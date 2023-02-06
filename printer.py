@@ -11,7 +11,7 @@ def format_weather(weather: Weather) -> str:
            f'Влажность: {weather.humidity}%\n' \
            f'Ветер: {weather.wind_speed} м/с\n' \
            f'Восход: {weather.sunrise.strftime("%H:%M")}\n' \
-           f'Закат: {weather.sunset.strftime("%H:%M")}'
+           f'Закат: {weather.sunset.strftime("%H:%M")}\n'
 
 
 if __name__ == '__main__':
