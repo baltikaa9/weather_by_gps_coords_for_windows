@@ -20,6 +20,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    # print(get_coordinates().longitude, get_coordinates().latitude)
-    # print(json.loads(urllib.request.urlopen(OPENWEATHER_URL.format(latitude=get_coordinates().latitude, longitude=get_coordinates().longitude)).read()))
-    # print(OPENWEATHER_URL.format(latitude=get_coordinates().latitude, longitude=get_coordinates().longitude))

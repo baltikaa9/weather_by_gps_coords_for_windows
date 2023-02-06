@@ -15,7 +15,7 @@ Celsius: TypeAlias = int
 Percents: TypeAlias = int
 
 
-class WeatherType(Enum):
+class WeatherType(str, Enum):
     THUNDERSTORM = 'Гроза'
     DRIZZLE = 'Изморось'
     RAIN = 'Дождь'
@@ -30,7 +30,7 @@ class Weather(NamedTuple):
     temp_feels: Celsius
     weather_type: WeatherType
     humidity: Percents
-    wind_speed: int
+    wind_speed: int | float
     sunrise: datetime
     sunset: datetime
     city: str
@@ -124,4 +124,4 @@ def _parse_city(openweather_dict: dict) -> str:
 
 
 if __name__ == '__main__':
-    print(get_weather(Coordinates(latitude=48.7729, longitude=44.5437)))
+    print(get_weather(Coordinates(latitude=0, longitude=0)))
