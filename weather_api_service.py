@@ -17,7 +17,7 @@ Percents: TypeAlias = int
 
 class WeatherType(Enum):
     THUNDERSTORM = 'Гроза'
-    DRIZZLE = 'Изморозь'
+    DRIZZLE = 'Изморось'
     RAIN = 'Дождь'
     SNOW = 'Снег'
     CLEAR = 'Ясно'
