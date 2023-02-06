@@ -1,3 +1,4 @@
+from dataclasses import dataclass
 from datetime import datetime
 from enum import Enum
 from typing import NamedTuple, Literal, TypeAlias
@@ -25,7 +26,8 @@ class WeatherType(str, Enum):
     CLOUDS = 'Облачно'
 
 
-class Weather(NamedTuple):
+@dataclass(slots=True, frozen=True)
+class Weather:
     temperature: Celsius
     temp_feels: Celsius
     weather_type: WeatherType
